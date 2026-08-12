@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/*
+  Design tokens are set as inline CSS custom properties on <html> in
+  app/layout.tsx, resolved per-client from config/styles/presets.ts.
+  This file only maps those runtime vars into Tailwind's theme, so
+  components can use bg-primary / text-ink / rounded-card / font-display
+  etc without ever touching a literal color or font name.
+*/
+@theme inline {
+  --color-primary: var(--rt-color-primary);
+  --color-primary-dim: var(--rt-color-primary-dim);
+  --color-accent: var(--rt-color-accent);
+  --color-ink: var(--rt-color-ink);
+  --color-ink-soft: var(--rt-color-ink-soft);
+  --color-surface: var(--rt-color-surface);
+  --color-surface-dim: var(--rt-color-surface-dim);
+  --color-panel: var(--rt-color-panel);
+  --color-panel-text: var(--rt-color-panel-text);
+  --color-line: var(--rt-color-line);
+
+  --radius-card: var(--rt-radius-card);
+
+  --font-display: var(--rt-font-display);
+  --font-body: var(--font-body);
+  --font-mono: var(--font-mono);
+}
+
+body {
+  background: var(--color-surface);
+  color: var(--color-ink);
+  font-family: var(--font-body), sans-serif;
+}
