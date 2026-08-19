@@ -1,6 +1,10 @@
 .env
-.venv/
+.env.*
+!.env.example
+secrets/
+*.key
+*.pem
 __pycache__/
-*.pyc
-data/raw/*.json
-data/output/*.xlsx
+.venv/
+venv/
+.DS_Store
