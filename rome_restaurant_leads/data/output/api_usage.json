@@ -1,0 +1,16 @@
+{
+  "run_started_at": "2026-08-19T19:27:17.205339+00:00",
+  "run_finished_at": "2026-08-19T19:46:24.283137+00:00",
+  "text_search_calls": 189,
+  "text_search_pages": 189,
+  "place_details_calls": 1000,
+  "google_api_errors": 0,
+  "raw_places_returned": 3699,
+  "unique_places_found": 1000,
+  "duplicate_places_removed": 2699,
+  "websites_checked": 0,
+  "websites_with_url": 0,
+  "websites_without_url": 0,
+  "total_google_calls": 1189,
+  "google_calls_per_unique_place": 1.189
+}
