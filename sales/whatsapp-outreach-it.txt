@@ -2,7 +2,7 @@ ROMA TAVOLA — MESSAGGI WHATSAPP PER RISTORANTI
 
 MESSAGGIO INIZIALE (consigliato)
 
-Buongiorno, sono Saule. Ho preparato un esempio di pagina digitale pensata per ristoranti di Roma: menù mobile, QR code, contatti, Google Maps e prenotazione in un unico posto.
+Buongiorno, siamo Grandenes, un'agenzia digitale specializzata in soluzioni per la ristorazione. Abbiamo preparato un esempio di pagina digitale pensata per ristoranti di Roma: menù mobile, QR code, contatti, Google Maps e prenotazione in un unico posto.
 
 Questo è il demo:
 https://roma-tavola-il-corallo.vercel.app/
@@ -11,16 +11,16 @@ La pagina può essere personalizzata con il vostro logo, colori, piatti e inform
 
 Se vi interessa, posso prepararvi gratuitamente una breve anteprima con il nome del vostro ristorante.
 
-— Saule
+— Grandenes
 
 
 VERSIONE PIÙ BREVE
 
-Buongiorno, sono Saule. Realizzo pagine digitali per ristoranti con menù mobile, QR code, Google Maps e prenotazioni.
+Buongiorno, siamo Grandenes. Realizziamo pagine digitali per ristoranti con menù mobile, QR code, Google Maps e prenotazioni.
 
 Demo: https://roma-tavola-il-corallo.vercel.app/
 
-Per i primi 10 ristoranti: €150. Posso prepararvi gratuitamente una breve anteprima personalizzata?
+Per i primi 10 ristoranti: €150. Possiamo prepararvi gratuitamente una breve anteprima personalizzata?
 
 
 FOLLOW-UP DOPO 2–3 GIORNI
