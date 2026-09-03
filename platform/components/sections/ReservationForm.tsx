@@ -17,6 +17,7 @@ export function ReservationForm({ config }: { config: RestaurantConfig }) {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("20:00");
   const [people, setPeople] = useState("2");
+  const [demoSent, setDemoSent] = useState(false);
 
   if (config.reservation.channel === "phone") {
     return (
@@ -52,6 +53,10 @@ export function ReservationForm({ config }: { config: RestaurantConfig }) {
         className="flex flex-col gap-4"
         onSubmit={(e) => {
           e.preventDefault();
+          if (config.reservation.channel === "demo") {
+            setDemoSent(true);
+            return;
+          }
           const link = buildReservationLink(
             config.reservation,
             { people, date: formatDate(date) || date, time },
@@ -98,8 +103,9 @@ export function ReservationForm({ config }: { config: RestaurantConfig }) {
           type="submit"
           className="mt-2 rounded-card bg-primary px-6 py-3.5 text-sm font-bold uppercase text-white transition-transform hover:-translate-y-0.5"
         >
-          💬 {t("reservation.submit")}
+          {config.reservation.channel === "demo" ? `✦ ${t("reservation.demoSubmit")}` : `💬 ${t("reservation.submit")}`}
         </button>
+        {demoSent && <p className="text-center text-sm font-semibold text-primary">{t("reservation.demoSuccess")}</p>}
       </form>
     </section>
   );

@@ -6,9 +6,12 @@ import { ReservationForm } from "@/components/sections/ReservationForm";
 import { LocationSection } from "@/components/sections/LocationSection";
 import { HoursTable } from "@/components/sections/HoursTable";
 import { InstagramTeaser } from "@/components/sections/InstagramTeaser";
+import { PremiumHome } from "@/components/sections/PremiumHome";
 
 export default function Home() {
   const config = getClientConfig();
+
+  if (config.premium) return <PremiumHome config={config} />;
 
   return (
     <>

@@ -54,9 +54,29 @@ export interface WhyUsCard {
 export interface ReservationConfig {
   enabled: boolean;
   /** Defaults to WhatsApp for backwards compatibility. */
-  channel?: "whatsapp" | "phone";
+  channel?: "whatsapp" | "phone" | "demo";
   whatsappNumber?: string;
   messageTemplate?: LocalizedText;
+}
+
+export interface PremiumExperience {
+  conceptLabel: LocalizedText;
+  introduction: LocalizedText;
+  chefName: string;
+  chefTitle: LocalizedText;
+  chefBio: LocalizedText;
+  chefImage: string;
+  philosophyTitle: LocalizedText;
+  philosophyBody: LocalizedText;
+  wineTitle: LocalizedText;
+  wineBody: LocalizedText;
+  wineImage: string;
+  tastingMenus: Array<{
+    name: LocalizedText;
+    courses: LocalizedText;
+    price: string;
+  }>;
+  galleryImages: Array<{ src: string; alt: LocalizedText }>;
 }
 
 export type StylePreset = "roman-classic" | "modern-italian" | "night-aperitivo";
@@ -120,6 +140,9 @@ export interface RestaurantConfig {
   };
 
   analytics?: AnalyticsConfig;
+
+  /** Optional editorial modules used by the €300–€500 premium tier. */
+  premium?: PremiumExperience;
 
   legal: {
     privacyPolicyContent?: LocalizedText;

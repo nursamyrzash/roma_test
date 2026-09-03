@@ -50,6 +50,8 @@ export type UIKey =
   | "reservation.submit"
   | "reservation.call"
   | "reservation.callNote"
+  | "reservation.demoSubmit"
+  | "reservation.demoSuccess"
   | "reservation.walkInOnly"
   | "footer.privacy"
   | "footer.cookie"
@@ -90,6 +92,8 @@ export const UI_COPY: Record<"it" | "en", Record<UIKey, string>> = {
     "reservation.submit": "Prenota su WhatsApp",
     "reservation.call": "Chiama per Prenotare",
     "reservation.callNote": "Le prenotazioni vengono confermate direttamente dal ristorante per telefono.",
+    "reservation.demoSubmit": "Richiedi disponibilità",
+    "reservation.demoSuccess": "Richiesta demo ricevuta — nel sito reale verrebbe inviata al ristorante.",
     "reservation.walkInOnly": "Non prendiamo prenotazioni — basta presentarsi.",
     "footer.privacy": "Privacy Policy",
     "footer.cookie": "Cookie Policy",
@@ -129,6 +133,8 @@ export const UI_COPY: Record<"it" | "en", Record<UIKey, string>> = {
     "reservation.submit": "Reserve via WhatsApp",
     "reservation.call": "Call to Reserve",
     "reservation.callNote": "Reservations are confirmed directly by the restaurant by phone.",
+    "reservation.demoSubmit": "Request availability",
+    "reservation.demoSuccess": "Demo request received — on the live site it would be sent to the restaurant.",
     "reservation.walkInOnly": "We don't take reservations — just walk in.",
     "footer.privacy": "Privacy Policy",
     "footer.cookie": "Cookie Policy",

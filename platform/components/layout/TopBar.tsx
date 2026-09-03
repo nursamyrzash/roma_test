@@ -22,6 +22,11 @@ export function TopBar({ config }: { config: RestaurantConfig }) {
           <Link href="/menu" className="hover:text-primary">
             {t("nav.menu")}
           </Link>
+          {config.premium && (
+            <Link href="/#esperienza" className="hover:text-primary">
+              {config.languages[0] === "it" ? "Esperienza" : "Experience"}
+            </Link>
+          )}
           {config.locations.length > 0 && (
             <a href="#dove-siamo" className="hover:text-primary">
               {t("nav.locations")}
