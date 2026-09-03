@@ -53,6 +53,8 @@ export interface WhyUsCard {
 
 export interface ReservationConfig {
   enabled: boolean;
+  /** Defaults to WhatsApp for backwards compatibility. */
+  channel?: "whatsapp" | "phone";
   whatsappNumber?: string;
   messageTemplate?: LocalizedText;
 }

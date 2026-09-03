@@ -18,6 +18,24 @@ export function ReservationForm({ config }: { config: RestaurantConfig }) {
   const [time, setTime] = useState("20:00");
   const [people, setPeople] = useState("2");
 
+  if (config.reservation.channel === "phone") {
+    return (
+      <section className="mx-auto max-w-md px-5 py-10 text-center">
+        <h2 className="mb-3 font-display text-2xl uppercase">{t("reservation.title")}</h2>
+        <p className="mb-6 text-ink-soft">{t("reservation.callNote")}</p>
+        {config.phone && (
+          <a
+            href={`tel:${config.phone}`}
+            onClick={() => trackEvent("phone_click", { source: "reservation_section" })}
+            className="inline-flex rounded-card bg-primary px-6 py-3.5 text-sm font-bold uppercase text-white transition-transform hover:-translate-y-0.5"
+          >
+            📞 {t("reservation.call")} · {config.phone}
+          </a>
+        )}
+      </section>
+    );
+  }
+
   function formatDate(iso: string): string {
     if (!iso) return "";
     const parsed = new Date(`${iso}T00:00:00`);

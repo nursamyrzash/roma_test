@@ -50,7 +50,7 @@ export function Footer({ config }: { config: RestaurantConfig }) {
         </div>
 
         <div>
-          <p className="mb-2 text-xs uppercase tracking-wide text-ink-soft">{t("instagram.follow")}</p>
+          <p className="mb-2 text-xs uppercase tracking-wide text-ink-soft">{t("social.follow")}</p>
           <ul className="flex flex-col gap-2 text-sm">
             {config.social.instagram && (
               <li>

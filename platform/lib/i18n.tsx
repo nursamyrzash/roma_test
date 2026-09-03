@@ -42,11 +42,14 @@ export type UIKey =
   | "day.sat"
   | "day.sun"
   | "instagram.follow"
+  | "social.follow"
   | "reservation.title"
   | "reservation.date"
   | "reservation.time"
   | "reservation.people"
   | "reservation.submit"
+  | "reservation.call"
+  | "reservation.callNote"
   | "reservation.walkInOnly"
   | "footer.privacy"
   | "footer.cookie"
@@ -79,11 +82,14 @@ export const UI_COPY: Record<"it" | "en", Record<UIKey, string>> = {
     "day.sat": "Sab",
     "day.sun": "Dom",
     "instagram.follow": "Seguici su Instagram",
+    "social.follow": "Seguici",
     "reservation.title": "Prenota il Tuo Tavolo",
     "reservation.date": "Data",
     "reservation.time": "Orario",
     "reservation.people": "Persone",
     "reservation.submit": "Prenota su WhatsApp",
+    "reservation.call": "Chiama per Prenotare",
+    "reservation.callNote": "Le prenotazioni vengono confermate direttamente dal ristorante per telefono.",
     "reservation.walkInOnly": "Non prendiamo prenotazioni — basta presentarsi.",
     "footer.privacy": "Privacy Policy",
     "footer.cookie": "Cookie Policy",
@@ -115,11 +121,14 @@ export const UI_COPY: Record<"it" | "en", Record<UIKey, string>> = {
     "day.sat": "Sat",
     "day.sun": "Sun",
     "instagram.follow": "Follow us on Instagram",
+    "social.follow": "Follow us",
     "reservation.title": "Reserve Your Table",
     "reservation.date": "Date",
     "reservation.time": "Time",
     "reservation.people": "People",
     "reservation.submit": "Reserve via WhatsApp",
+    "reservation.call": "Call to Reserve",
+    "reservation.callNote": "Reservations are confirmed directly by the restaurant by phone.",
     "reservation.walkInOnly": "We don't take reservations — just walk in.",
     "footer.privacy": "Privacy Policy",
     "footer.cookie": "Cookie Policy",
