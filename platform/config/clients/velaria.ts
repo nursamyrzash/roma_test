@@ -110,8 +110,8 @@ export const velaria: RestaurantConfig = {
     chefName: "Livia Neri",
     chefTitle: { it: "Un’identità romana, uno sguardo aperto sul Mediterraneo", en: "Roman identity with an open view of the Mediterranean" },
     chefBio: {
-      it: "Figura immaginaria creata per questo demo, la Chef Livia Neri interpreta ingredienti laziali con precisione, leggerezza e una sensibilità maturata lungo le coste del Mediterraneo.",
-      en: "A fictional character created for this demo, Chef Livia Neri interprets Lazio ingredients with precision, lightness and a sensibility shaped along the Mediterranean coast.",
+      it: "Nata a Roma, Livia Neri ha costruito la sua cucina attraverso quindici anni di esperienze tra la capitale, Firenze e Barcellona. Il suo percorso unisce la memoria delle tavole familiari romane alla leggerezza mediterranea e a una tecnica precisa, mai esibita. A Velaria lavora con piccoli produttori del Lazio e ingredienti stagionali, trasformando ricette riconoscibili in piatti essenziali, contemporanei e profondamente legati al territorio.",
+      en: "Born in Rome, Livia Neri shaped her cuisine through fifteen years in kitchens across the capital, Florence and Barcelona. Her approach brings together memories of Roman family tables, Mediterranean lightness and precise technique that never calls attention to itself. At Velaria she works with small Lazio producers and seasonal ingredients, transforming familiar recipes into essential, contemporary dishes rooted in the region.",
     },
     chefImage: "/clients/velaria/chef.png",
     philosophyTitle: { it: "La filosofia", en: "The philosophy" },
